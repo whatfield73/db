@@ -8,9 +8,9 @@ See the example in jsfiddle.
 
 Make calls to the db using:
 
-insert(<data in json>);
-delete(<row number>);
-find() or find(<name in db>, <data looking for>);
-make(<database name>);
+insert( data in json);
+delete(row number);
+find() or find(name in db, data looking for);
+make(database name);
 
 
