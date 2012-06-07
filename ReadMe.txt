@@ -4,7 +4,7 @@ Instantiate using:
 {kind: "jsdatabase", name: "db1", published: {database: ""}, onFailure: "dbFailure", onDel: "deleteResp",
  onMake: "makeSuccess", onInsert: "insertResp", onFind: "findmarkResponse"}
 
-See the example in jsfiddle.
+See the example in jsfiddle @ http://jsfiddle.net/dCuUg/1/
 
 Make calls to the db using:
 
