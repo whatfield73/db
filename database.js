@@ -35,7 +35,7 @@ window.localStorage[this.databasename] = enyo.json.stringify(currentdata);
 
 this.doInsert({response: "Inserted"});
 },
-delete: function(data) {
+remove: function(data) {
 var currentdata = enyo.json.parse(window.localStorage[this.databasename]);
 currentdata.splice(data,1);
 window.localStorage[this.databasename] = enyo.json.stringify(currentdata);
