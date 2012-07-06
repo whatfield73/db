@@ -9,7 +9,7 @@ See the example in jsfiddle @ http://jsfiddle.net/dCuUg/1/
 Make calls to the db using:
 
 insert( data in json);
-delete(row number);
+remove(row number);
 find() or find(name in db, data looking for);
 make(database name);
 
