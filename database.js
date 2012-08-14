@@ -22,6 +22,7 @@ if (currentdata == "ready" || currentdata == "") {
 currentdata = "";
 newdata = enyo.json.stringify(data);
 window.localStorage.setItem(this.databasename, "[" + newdata + "]");
+this.doInsert({response: "Inserted.", id: 0});
 }
 else {
 currentdata = enyo.json.parse(window.localStorage.getItem(this.databasename));
@@ -30,11 +31,11 @@ currentdata.push(data);
 //console.log(enyo.json.stringify(currentdata));
 
 window.localStorage.setItem(this.databasename,enyo.json.stringify(currentdata));
-}
-//var id = '{"' + num + '" :' +  enyo.json.stringify(data) + "}";
-//var newdata = enyo.mixin(currentdata, data);  //enyo.json.parse(id)
+this.doInsert({response: "Inserted", id: currentdata.length - 1});
 
-this.doInsert({response: "Inserted"});
+}
+
+
 },
 remove: function(data) {
 var currentdata = enyo.json.parse(window.localStorage.getItem(this.databasename));
